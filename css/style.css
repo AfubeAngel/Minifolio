@@ -452,8 +452,6 @@ a:visited {
 
 .project-cards {
   display: flex;
-  /* justify-content: space-around;
-  flex-wrap: wrap; */
   justify-content: center;
   flex-wrap: wrap;
   margin: 20px;
@@ -470,6 +468,10 @@ a:visited {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+
+  @media screen and (max-width:425px) {
+    width: 300px;
+  }
 }
 
 .card img {
